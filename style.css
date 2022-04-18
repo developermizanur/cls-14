@@ -1,0 +1,268 @@
+/* defult-css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1240px;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+h2, h3, h4, a, p {
+    font-family: Work Sans, sans-serif;
+}
+/* header-section */
+nav{
+    
+}
+.menu{
+
+}
+
+.menu ul{
+    text-align: center;
+    margin: 20px 0px;
+}
+.menu ul li{ 
+    display: inline-block;
+    /*! padding: 13px 0px; */
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color: #48dbfb;
+    transition: .4s;
+    position: relative;
+
+}
+
+.menu ul li a:hover{
+    background-color: white;
+    color: #48dbfb;
+}
+.menu ul li a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 10px;
+    bottom: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.menu ul li a:hover::before{
+    visibility: visible;
+    opacity: 1;
+    width: 80%;
+}
+
+/* banner-section */
+.banner-section{
+    background-color: #48dbfb;
+    text-align: center;
+    color: white;
+    height: 350px;
+}
+.banner-section h3{
+    font-size: 23px;
+    padding: 59px 0px 0px 0px;
+}
+.banner-section h2{
+    font-size: 50px;
+    padding: 26px 0px 35px 0px;
+}
+.banner-section button{
+    font-size: 20px;
+    background-color: white;
+    color: #c5bfbf;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-section button::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    transition: .4s;
+    z-index: -1;
+}
+
+.banner-section button:hover::before {
+    width: 100%;
+}
+
+.fa.fa-android {
+	margin-right: 5px;
+}
+
+/* carsoul-section */
+.carsoul-section{
+   background-color: #f7f9f9;
+   text-align: center;
+}
+.carsoul-section h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+.carsoul-section p{
+    text-align: center;
+    font-size: 19px;
+    color: #7f7c73;
+    margin-bottom: 50px;
+}
+.carsoul-top{
+    display: inline-block;
+}
+.carsoul{
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+}
+
+.carsoul-bottom{
+    display: inline-block;
+}
+
+.carsoul-picture{
+    overflow: hidden;
+}
+.one .carsoul-picture img{
+    transition: .4s;
+
+}
+.one .carsoul-picture img:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+.two .carsoul-picture img{
+    transition: .4s;
+    height: 186px;
+}
+.two .carsoul-picture img:hover{
+    transform: rotate(30deg);
+}
+.three .carsoul-picture img{
+    transition: .4s;
+}
+.three .carsoul-picture img:hover{
+    transform: rotate(-30deg);
+}
+.four .carsoul-picture img{
+    transition: .4s;
+}
+.four .carsoul-picture img:hover{
+    transform: rotate(-30deg);
+}
+.five .carsoul-picture img{
+    transition: .4s;
+    height: 187px;
+}
+.five .carsoul-picture img:hover{
+    transform: rotate(30deg);
+}
+.six .carsoul-picture img{
+    transition: .4s;
+}
+.six .carsoul-picture img:hover{
+    transform: rotate(360deg);
+}
+.seven .carsoul-picture img{
+    transition: .4s;
+}
+.seven .carsoul-picture img:hover{
+    transform: scale(1.2);
+}
+.eight .carsoul-picture img{
+    transition: .4s;
+}
+.eight .carsoul-picture img:hover{
+    transform: scale(1.2);
+}
+
+/* service-blog */
+.service-blog h2{
+
+}
+
+.service-blog h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    color: ;
+}
+.service-blog p{
+    text-align: center;
+    font-size: 19px;
+    padding-bottom: 10px;
+    color: #96919f;
+    line-height: 33px;
+}
+
+/* step-section */
+.wrapper-box{
+
+    text-align: center;
+    margin: 27px 0px;
+}
+.wrapper-box .step-div{
+    width: 120px;
+    height: 60px;
+    background-color: black;
+    margin: 5px 119px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    transition: .4s;
+    line-height: 50px;
+}
+.wrapper-box .step-div1{
+    transform: rotate(-45deg);
+}
+.wrapper-box .step-div2{
+    transform: scale(1);
+}
+.wrapper-box .step-div3{
+    transform: rotate(45deg);
+}
+
+.wrapper-box .step-div1:hover{
+    background-color: #26829f;
+    transform: rotate(0deg) scale(1.2);
+}
+.wrapper-box .step-div2:hover{
+    background-color: #26829f;
+    transform: scale(1.2);
+}
+.wrapper-box .step-div3:hover{
+    background-color: #26829f;
+    transform: rotate(0deg) scale(1.2);
+}
+
+/* footer-section */
+footer{
+    margin-bottom: 5px;
+
+}
+footer h2{
+    color: white;
+    background-color: #2e2f31;
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 15px;
+}
